@@ -171,8 +171,9 @@ Contributions are welcome!
 
 ## 📬 Contact
 
-Created with ❤️ by [Tushar Sood](https://github.com/tushars00d)  
-For any queries or feedback, feel free to connect via [LinkedIn](https://www.linkedin.com/in/tushars00d)
+Created by [Tushar Sood](https://github.com/tushars00d) & [Shubhanker](https://github.com/Shubhankeranand)
+
+For any queries or feedback, feel free to connect via [LinkedIn]([https://www.linkedin.com/in/tushars00d](https://www.linkedin.com/in/tushar-sood-03927b238/)
 
 ---
 
