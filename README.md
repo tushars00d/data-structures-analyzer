@@ -1,146 +1,181 @@
-📊 Data Structures Performance Analyzer
-Data Structures Performance Analyzer is an interactive, visual benchmarking tool built with Streamlit that provides deep insights into the performance of core data structures: Arrays (Lists), Linked Lists, and HashMaps (Dictionaries) in Python.
+# 📊 Data Structures Performance Analyzer
 
-It evaluates key operations — Insert, Search, and Delete — across various data sizes, measuring execution time, memory usage, and CPU utilization, while providing visually rich plots and profiler outputs.
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-ff4b4b)
+![Python](https://img.shields.io/badge/Language-Python-blue)
+![License](https://img.shields.io/badge/License-MIT-green)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 
-🚀 Features
-✅ Core Functionalities:
-Benchmark Arrays, Linked Lists, and HashMaps
+A sleek, interactive, and comprehensive tool built with **Streamlit** to benchmark and analyze the performance of fundamental data structures — **Arrays**, **Linked Lists**, and **HashMaps** — across core operations like **Insert**, **Search**, and **Delete**.  
+Gain detailed insights into **execution time**, **memory usage**, and **CPU consumption** with beautiful visualizations and profiler-backed metrics.
 
-Analyze operations: Insert, Search, Delete
+---
 
-Measure:
+## 🚀 Features
 
-Execution Time
+- 📈 **Visual Performance Analysis**  
+  Interactive charts to compare operations across different data structures and input sizes.
 
-Memory Usage
+- 💻 **Advanced Profiling**  
+  Uses `cProfile`, `psutil`, and custom time/memory profilers for accurate analysis.
 
-CPU Utilization
+- 🧠 **Resource Efficiency Insights**  
+  Memory, CPU, and time usage visualized to show which data structures are most efficient.
 
-Real-time Progress Bar and Status Updates
+- 📋 **Raw Data Export**  
+  View and download raw benchmark data and summary statistics.
 
-Customizable Data Sizes (Quick Test to Comprehensive Test)
+- 🎨 **Modern UI**  
+  Custom CSS styling for enhanced UX in Streamlit.
 
-📊 Visualizations:
-Interactive performance graphs (Plotly)
+---
 
-3D Scatter Plot for combined performance analysis
+## 🔍 What’s Benchmarked?
 
-Theoretical vs Actual Complexity Comparison
+### 🔧 Data Structures:
+- **Array (Python List)**
+- **Linked List (Custom Implementation)**
+- **HashMap (Python Dictionary)**
 
-Memory & CPU Efficiency Charts
+### ⚙️ Operations:
+- `Insert`
+- `Search`
+- `Delete`
 
-Detailed Profiler Outputs using cProfile
+### 📐 Metrics Collected:
+- Execution Time (in seconds)
+- Memory Usage (MB)
+- CPU Usage (%)
+- Time Complexity Estimations
+- Resource Efficiency Score
 
-📂 Export & Review:
-Raw data table with summary statistics
+---
 
-Download results as CSV
+## 🖥️ Screenshots
 
-📸 Screenshots
+<img width="986" height="554" alt="image" src="https://github.com/user-attachments/assets/2fccd2ba-bd63-4e2f-85f0-cf5e07555945" />
 
-🧠 Technologies Used
-Technology	Purpose
-Python 3.8+	Core language
-Streamlit	Interactive frontend
-Plotly	Interactive data visualizations
-Pandas	Data manipulation
-psutil	System resource monitoring
-cProfile	CPU profiling
-memory_profiler	Memory profiling
-Seaborn & Matplotlib	Optional basic plotting
+<img width="958" height="658" alt="image" src="https://github.com/user-attachments/assets/99bbac6d-9431-4bab-8d3a-d71989aaa538" />
 
-📦 Installation
-✅ Requirements
-Python 3.8+
+---
 
-Pip
+## 🧪 Demo
 
-📥 Clone and Install Dependencies
-bash
-Copy
-Edit
+> 💡 Run this locally using the command below:
+
+```
+streamlit run app.py
+```
+---
+
+## 📦 Installation
+
+### 🔗 Requirements
+
+- Python 3.8+
+- pip
+
+### 📥 Clone and Install
+
+```
 git clone https://github.com/your-username/data-structure-performance-analyzer.git
 cd data-structure-performance-analyzer
 pip install -r requirements.txt
-🛠️ requirements.txt
-nginx
-Copy
-Edit
+```
+
+### Required Libraries
+
+```
 streamlit
 pandas
 numpy
-plotly
 matplotlib
 seaborn
-memory_profiler
+plotly
+memory-profiler
 psutil
-🧪 Usage
-▶️ Run the App
-bash
-Copy
-Edit
-streamlit run app.py
-Then open your browser at: http://localhost:8501
+```
 
-🗂️ Benchmark Configuration
-Select Data Sizes:
-Quick Test: [100, 500, 1000]
+> Or install manually:
 
-Standard Test: [1000, 5000, 10000, 20000]
+```
+pip install streamlit pandas numpy matplotlib seaborn plotly memory-profiler psutil
+```
 
-Comprehensive Test: [1000, 5000, 10000, 20000, 50000, 100000]
+---
 
-Custom: Any comma-separated sizes
+## ⚙️ How It Works
 
-Toggle Analysis Options:
-✔️ Show Profiler Output
+- Each data structure is benchmarked over user-defined sizes.
+- Operations are run in a timed and memory-profiled context.
+- Results are collected in a structured format using `@dataclass`.
+- Visualizations use **Plotly** and **Streamlit Tabs** for dynamic insights.
 
-✔️ Include Memory Usage
+---
 
-✔️ Include CPU Usage
+## 📂 Folder Structure
 
-📈 Analysis Outputs
-Metric	Description
-Execution Time	Duration of the operation
-Memory Usage	RAM used during the operation
-CPU Usage	CPU percentage used during execution
-Complexity Estimate	Theoretical time complexity
+```
+├── app.py                   # Main Streamlit app
+├── README.md                # Project documentation
+├── requirements.txt         # Python dependencies
+└── assets/ (optional)       # Screenshots, visuals
+```
 
-📤 Export Options
-View raw benchmark data
+---
 
-Download CSV of all results
+## 📊 Benchmark Modes
 
-Summary statistics provided
+| Mode              | Sizes Tested                       |
+|-------------------|-------------------------------------|
+| Quick Test        | 100, 500, 1000                     |
+| Standard Test     | 1000, 5000, 10000, 20000           |
+| Comprehensive     | 1000 → 100000                      |
+| Custom            | User-defined                       |
 
-💡 Theoretical Time Complexities
-Operation	Array	Linked List	HashMap
-Insert	O(n)	O(1)	O(1)
-Search	O(n)	O(n)	O(1)
-Delete	O(n)	O(n)	O(1)
+---
 
-🧑‍💻 Contributing
-Contributions are welcome! Feel free to:
+## 💡 Use Cases
 
-Open issues
+- Teaching data structure performance
+- Interview preparation & visualization
+- Exploratory system-level profiling
+- Benchmarking custom implementations
 
-Suggest features
+---
 
-Submit pull requests
+## 📥 Download Results
 
-To contribute:
-bash
-Copy
-Edit
-git checkout -b feature/your-feature-name
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Export full benchmark results as `.csv` for offline analysis.
+- Includes execution time, memory delta, CPU usage, complexity info.
 
-🙌 Acknowledgements
-Inspired by real-world performance bottlenecks in Python data handling.
+---
 
-Profiling powered by cProfile, memory_profiler, and psutil.
+## 🛡 License
 
-🌐 Author
-Your Name – @your_handle
+This project is licensed under the **MIT License**.  
+Feel free to use, modify, and distribute.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository  
+2. Create your feature branch (`git checkout -b feat/feature-name`)  
+3. Commit your changes (`git commit -m 'Add new feature'`)  
+4. Push to the branch (`git push origin feat/feature-name`)  
+5. Open a pull request
+
+---
+
+## 📬 Contact
+
+Created with ❤️ by [Tushar Sood](https://github.com/tushars00d)  
+For any queries or feedback, feel free to connect via [LinkedIn](https://www.linkedin.com/in/tushars00d)
+
+---
+
+## 🌟 Show Your Support
+
+If you liked this project, feel free to ⭐ the repository and share it with others!
