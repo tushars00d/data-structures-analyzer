@@ -1,4 +1,4 @@
-# Data Structures Performance Analyzer
+# Performance Analyzer of Data Structures 
 
 This Python project benchmarks different data structures like arrays, linked lists, and hashmaps across key operations: insertion, searching, and deletion.
 
@@ -9,7 +9,7 @@ This Python project benchmarks different data structures like arrays, linked lis
 
 ## ▶️ How to Run
 
-Make sure Python is installed. Then, in the terminal:
+Make sure Python, Streamlit is installed. Then, in the terminal:
 
 ```bash
-python app.py
+streamlit run app.py
